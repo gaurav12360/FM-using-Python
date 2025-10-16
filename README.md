@@ -27,9 +27,35 @@ Algorithm
 6.	Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
 
 Program
+import numpy as np
+import matplotlib.pyplot as plt
 
+am = 4.2
+fm = 368
+ac = 8.4
+fc = 3680
+fs = 36800
+beta = 3.3
+t = np.arange(0, 2/fm, 1/fs)
+
+m = am * np.cos(2 * np.pi * fm * t)
+plt.subplot(3,1,1)
+plt.plot(t, m)
+
+c = ac * np.cos(2 * np.pi * fc * t)
+plt.subplot(3,1,2)
+plt.plot(t, c)
+
+efm = ac * np.cos(2 * np.pi * fc * t + beta * np.sin(2 * np.pi * fm * t))
+plt.subplot(3,1,3)
+plt.plot(t, efm)
+plt.title("FM")
+
+plt.tight_layout()
+plt.show()
 
 Output Waveform
+<img width="630" height="469" alt="image" src="https://github.com/user-attachments/assets/f19faa35-a23b-44bb-a827-6a4b173a367b" />
 
 
 Tabular Column
