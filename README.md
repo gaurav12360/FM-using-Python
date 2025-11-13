@@ -59,11 +59,13 @@ Output Waveform
 <img width="630" height="469" alt="image" src="https://github.com/user-attachments/assets/f19faa35-a23b-44bb-a827-6a4b173a367b" />
 
 
-Tabular Column
+Tabular Column & Calculation
+
+![WhatsApp Image 2025-11-13 at 11 42 54 AM](https://github.com/user-attachments/assets/605132a5-79df-4434-ba28-2d6c9ccd24d8)
 
 
+RESULT: Thus the frequency modulation is carried out using python 
 
-Calculation
 
 
 
